@@ -1,0 +1,16 @@
+{
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "script.js" ],
+      "matches": [ "http://*/*", "https://*/*", "ftp://*/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Just a simple Google Chrome extension that adds QR code to the print version of a web page.",
+   "icons": {
+      "128": "icon128.png",
+      "48": "icon48.png"
+   },
+   "name": "QRprintExtension",
+   "permissions": [ "tabs" ],
+   "version": "1.0.1"
+}
